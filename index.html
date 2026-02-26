@@ -15,10 +15,14 @@
       #actual-home,#actual-price{padding:15px 8px;}
       #actual-home,#actual-price{display:flex;flex-direction:column;}
       img{width:70%;}
+    .bento-card{display:grid;gap:20px;padding:20px;}
+    .bento-card{display:flex;flex-wrap:wrap;gap:16px;flex-direction:row;border-radius:28px;
+    border:1px solid rgba(0,0,0,0.05);box-shadow:0 10px 30px rgba(0,0,0,0.03);
+  transition:transform 0,3s ease;}
     </style>
   </head>
   <body>
-    <h1>Burberry Laundry Logistics</h1>
+    <h1 class="bento-card">Burberry Laundry Logistics</h1>
     <p>Maintaining Your Wears is our Priority</p>
     <label for="box-1">Do you stay around Egba?</label>
     <select id="box-1">
@@ -26,8 +30,8 @@
       <option>No</option>
     </select>
     <ul>
-    <li><a href="#actual-home">SERVICES</a></li>
-    <li><a href="#actual-price">PRICES</a></li>
+    <li class="bento-card"><a href="#actual-home">SERVICES</a></li>
+    <li class="bento-card"><a href="#actual-price">PRICES</a></li>
     <li><a href="http://wa.me/+2347071192953">CONTACT US</a></li>
     </ul>
     <img src="abcd.jpg" alt="BB Laundry" height="700px" width>
@@ -45,6 +49,7 @@
     <li>Duvet-2500</li>
     <li>Washing and Ironing(Shirt)-750</li>
     <li>Washing and Ironing(Trouser)-750</li>
+    <li>Suits-1000</li>
    </ul>
    
     
