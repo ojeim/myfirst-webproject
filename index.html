@@ -17,7 +17,13 @@
       #actual-home,#actual-price{display:flex;flex-direction:column;}
       img{width:70%;}
     .bento-card{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
-    .bento-card{display:grid;gap:20px;padding:40px;grid-template-columns: 3, 1fr;}
+    .bento-card{display:grid;gap:20px;padding:40px;grid-template-columns: 3, 1fr;
+      grid-row: span X;grid-template-rows: 3, 200px;grid-template-areas: "hero hero side"
+      "hero hero mini";}
+      .card-1{grid-area:hero;background:black;}
+      .card-2{grid-area: side;background:lightcoral;}
+      .card-3{grid-area:mini;background:black;}
+
     .bento-card{display:flex;flex-wrap:wrap;gap:20px;flex-direction:row;border-radius:50px;
     border:10px solid rgba(0,0,0,0.05);box-shadow:0 10px 30px rgba(0,0,0,0.03);
   transition:transform 0,3s ease;text-decoration:none;justify-content: center;}
@@ -35,9 +41,9 @@
     </select>
     <div class="bento-card">
     <ul>
-    <li class="bento-card"><a href="#actual-home">SERVICES</a></li>
-    <li class="bento-card"><a href="#actual-price">PRICES</a></li>
-    <li class="bento-card"><a href="http://wa.me/+2347071192953">CONTACT US</a></li>
+    <li class="card-1"><a href="#actual-home">SERVICES</a></li>
+    <li class="card-2"><a href="#actual-price">PRICES</a></li>
+    <li class="card-3"><a href="http://wa.me/+2347071192953">CONTACT US</a></li>
     </ul>
     </div>
     <img src="abcd.jpg" alt="BB Laundry" height="700px" width>
