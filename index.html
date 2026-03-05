@@ -16,27 +16,30 @@
       #actual-home,#actual-price{padding:15px 8px;text-decoration:none;}
       #actual-home,#actual-price{display:flex;flex-direction:column;}
       img{width:70%;}
-      .bento-card{font-family:"Arial",sans-serif;}
-      ul{list-style-type:square;}
+    .bento-card{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
     .bento-card{display:grid;gap:20px;padding:20px;}
     .bento-card{display:flex;flex-wrap:wrap;gap:16px;flex-direction:row;border-radius:50px;
     border:1px solid rgba(0,0,0,0.05);box-shadow:0 10px 30px rgba(0,0,0,0.03);
-  transition:transform 0,3s ease;text-decoration:none;}
+  transition:transform 0,3s ease;text-decoration:none;justify-content: center;}
     </style>
   </head>
   <body>
-    <h1 class="bento-card">Burberry Laundry Logistics</h1>
+   <div class="bento-card">
+    <h1>Burberry Laundry Logistics</h1>
+    </div>
     <p>Maintaining Your Wears is our Priority</p>
     <label for="box-1">Do you stay around Egba?</label>
     <select id="box-1">
       <option>Yes</option>
       <option>No</option>
     </select>
+    <div class="bento-card">
     <ul>
     <li class="bento-card"><a href="#actual-home">SERVICES</a></li>
     <li class="bento-card"><a href="#actual-price">PRICES</a></li>
     <li class="bento-card"><a href="http://wa.me/+2347071192953">CONTACT US</a></li>
     </ul>
+    </div>
     <img src="abcd.jpg" alt="BB Laundry" height="700px" width>
     <h1 id="actual-home" class="bento-card">Welcome to BLL Wall</h1>
     <p id="actual-home">The numerous service we render includes:</p>
@@ -47,6 +50,7 @@
       <li>Starching</li>
       <li>Shoe Washing</li>
     </ul>
+    <div class="bento-card">
   <h1 id="actual-price">BLL Washing Prices based on cloth type;</h1>
    <ul id="actual-price">
     <li>Duvet-2500</li>
@@ -54,6 +58,7 @@
     <li>Washing and Ironing(Trouser)-750</li>
     <li>Suits-1000</li>
    </ul>
+   </div>
    
     
   </body>
