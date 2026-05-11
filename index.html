@@ -24,9 +24,15 @@
       .card-2{grid-area:side;background:lightcoral;}
       .card-3{grid-area:mini;background:black;}
 
-    .bento-card{display:flex;flex-wrap:wrap;gap:20px;flex-direction:row;border-radius:50px;
+    .bento-card{display:flex;flex-wrap:wrap;gap:20px;flex-direction:column;border-radius:50px;
     border:10px solid rgba(0,0,0,0.05);box-shadow:0 10px 30px rgba(0,0,0,0.03);
-  transition:transform 0,3s ease;text-decoration:none;justify-content: center;}
+  transition:0.3s ease;text-decoration:none;justify-content: flex-end;}
+  .omo,.low,.jug{display:inline-block;
+  padding:8px 10px;
+background-color: rgb(43, 226, 67);
+text-decoration: none;
+border-radius: 20px;
+color: aquamarine;}
     </style>
   </head>
   <body>
@@ -40,11 +46,9 @@
       <option>No</option>
     </select>
     <div class="bento-card">
-    <ul>
-    <li class="card-1"><a href="#actual-home">SERVICES</a></li>
-    <li class="card-2"><a href="#actual-price">PRICES</a></li>
-    <li class="card-3"><a href="http://wa.me/+2347071192953">CONTACT US</a></li>
-    </ul>
+    <a href="#actual-home" class="omo">SERVICES</a>
+    <a href="#actual-price"class="low">PRICES</a>
+    <a href="http://wa.me/+2347071192953" class="jug">CONTACT US</a>
     </div>
     <img src="abcd.jpg" alt="BB Laundry" height="700px" width>
     <h1 id="actual-home" class="bento-card">Welcome to BLL Wall</h1>
