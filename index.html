@@ -10,7 +10,7 @@
       h1{color:rgba(228, 252, 228, 0.74);font-size:large;text-align:center;background-color:FFFDD0;font-size:1.5rem;
       line-height:1.2;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: italic;}
-      p{font-size:large;font-weight:bold;color:green;}
+      p{font-size:large;font-weight:bold;color:green;font-style: italic;}
       #actual-home{display:flex;flex-direction:column;flex-wrap:wrap;border-radius:25px;
       ;text-decoration:none;padding:15px;
         border:5pxs;}
@@ -19,7 +19,7 @@
       img{width:70%;}
     .bento-card{
   display:flex; justify-content: center; padding-bottom: 20px; padding-top: 20px;
-background-color: rgb(0, 255, 149);font-weight: bold;font-size: 1.7rem;color: rgba(245, 245, 220, 0.842);}
+background-color: rgb(0, 255, 149);font-weight: bold;font-size: 1.7rem;color: rgba(241, 241, 234, 0.932);}
     .bento{display:flex;flex-wrap:wrap;gap:20px;flex-direction:column;border-radius:50px;
     border:10px solid rgba(0,0,0,0.05);box-shadow:0 10px 30px rgba(0,0,0,0.03);
   transition:0.3s ease;text-decoration:none;justify-content: flex-end;}
@@ -30,6 +30,9 @@ text-decoration: none;
 border-radius: 20px;
 color: aquamarine;}
 .thanks{background-color: rgba(0, 0, 0, 0.13);}
+.bnf{background-color: rgb(43, 226, 67);}
+.bentoca{gap:15px;}
+.shoes{gap:15px}
     </style>
   </head>
   <body>
@@ -51,16 +54,18 @@ color: aquamarine;}
     <img src="abcd.jpg" alt="BB Laundry" height="700px" width>
     <h1 id="actual-home" class="bento-card">Welcome to BLL Wall</h1>
     <p id="actual-home">The numerous service we render includes:</p>
-    <ul id="actual-home" class="bento-card">
+    <ul id="actual-home" class="bentoca">
       <li>Washing Only</li>
       <li>Ironing Only</li>
       <li>Washing and Ironing</li>
       <li>Starching</li>
       <li>Shoe Washing</li>
     </ul>
-    <div class="bento-card">
-  <h1 id="actual-price">BLL Washing Prices based on cloth type;</h1>
-   <ul id="actual-price">
+    <div class="ben-card">
+  <h1 id="actual-price" class="bnf">BLL Washing Prices based on cloth type;</h1>
+  </div>
+  <div class="norms">
+   <ul id="actual-price" class="shoes">
     <li>Duvet-2500</li>
     <li>Washing and Ironing(Shirt)-750</li>
     <li>Washing and Ironing(Trouser)-750</li>
